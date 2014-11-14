@@ -1,0 +1,8 @@
+﻿@using TicketingSystem.Web.Areas.Administration.ViewModel.Categories;
+@{
+    const string ControllerName = "Categories";
+    ViewBag.Title = ControllerName;
+}
+
+<h2>@ViewBag.Title</h2>
+@(Html.FullFeaturedGrid<CategoryViewModel>(ControllerName, m => m.Id))
